@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GTA 6 Countdown</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=DM+Mono:wght@500&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="scene">
+  <div class="sun" aria-hidden="true"></div>
+
+  <div class="topline">
+    <span class="chip">Vice City &middot; State of Leonida</span>
+    <nav class="nav" aria-label="Pages">
+      <span class="chip alt">Nov 19, 2026</span>
+      <a class="chip" href="#about" id="navAbout">About</a>
+    </nav>
+  </div>
+
+  <div id="view-home">
+  <main class="hero">
+    <h1>Vice City<br>is calling</h1>
+    <p class="sub">Grand Theft Auto VI launches November 19, 2026. Here is how long you have left.</p>
+  </main>
+
+  <section aria-label="Countdown to the GTA 6 release">
+    <ol class="timer" id="timer" role="timer" aria-label="Time until GTA 6 launches">
+      <li class="unit"><span class="num" id="d">00</span><span class="label">Days</span></li>
+      <li class="unit"><span class="num" id="h">00</span><span class="label">Hours</span></li>
+      <li class="unit"><span class="num" id="m">00</span><span class="label">Minutes</span></li>
+      <li class="unit"><span class="num" id="s">00</span><span class="label">Seconds</span></li>
+    </ol>
+
+    <div class="live" id="live" hidden>
+      <strong>It's out today</strong>
+      <span>Welcome to Vice City. Go play.</span>
+    </div>
+
+    <p class="hours-left" id="hoursLeft"></p>
+
+    <ul class="meta">
+      <li>PlayStation 5</li>
+      <li>Xbox Series X|S</li>
+      <li>Counts to midnight, your local time</li>
+    </ul>
+  </section>
+  </div>
+
+  <section class="about" id="view-about" aria-labelledby="aboutTitle" hidden>
+    <h2 id="aboutTitle">About this site</h2>
+    <p>This is a single-purpose fan page that counts down, live, to the launch of Grand Theft Auto VI on November 19, 2026.</p>
+    <ul>
+      <li>The clock updates every second and shows the days, hours, minutes and seconds left, plus the total hours to go.</li>
+      <li>It uses your device's clock and time zone, so it counts to midnight where you are, not a single worldwide moment.</li>
+      <li>On release day the tiles are replaced by a launch message.</li>
+      <li>Nothing is saved or sent anywhere. The page only reads your device's time.</li>
+    </ul>
+    <p>It is an unofficial project, made by a fan, with original artwork. It is not affiliated with or endorsed by Rockstar Games or Take-Two Interactive.</p>
+    <p class="back"><a href="#">Back to the countdown</a></p>
+  </section>
+
+  <footer class="shore">
+    <svg class="palm l" viewBox="0 0 300 500" aria-hidden="true">
+      <defs>
+        <path id="frond" d="M0 0 C 35 -48 98 -54 148 -4 C 104 -24 48 -18 0 0 Z"/>
+      </defs>
+      <g fill="#2B0B47">
+        <path d="M138 500 C 148 380 128 240 146 94 L 160 94 C 150 250 178 380 172 500 Z"/>
+        <g transform="translate(152 92)">
+          <use href="#frond" transform="rotate(-64)"/>
+          <use href="#frond" transform="rotate(-28)"/>
+          <use href="#frond" transform="rotate(8)"/>
+          <use href="#frond" transform="rotate(44)"/>
+          <use href="#frond" transform="scale(-1 1) rotate(-64)"/>
+          <use href="#frond" transform="scale(-1 1) rotate(-28)"/>
+          <use href="#frond" transform="scale(-1 1) rotate(8)"/>
+          <use href="#frond" transform="scale(-1 1) rotate(44)"/>
+          <use href="#frond" transform="rotate(-92) scale(0.8)"/>
+        </g>
+      </g>
+    </svg>
+    <svg class="palm r" viewBox="0 0 300 500" aria-hidden="true">
+      <g fill="#2B0B47">
+        <path d="M138 500 C 148 380 128 240 146 94 L 160 94 C 150 250 178 380 172 500 Z"/>
+        <g transform="translate(152 92)">
+          <use href="#frond" transform="rotate(-64)"/>
+          <use href="#frond" transform="rotate(-28)"/>
+          <use href="#frond" transform="rotate(8)"/>
+          <use href="#frond" transform="rotate(44)"/>
+          <use href="#frond" transform="scale(-1 1) rotate(-64)"/>
+          <use href="#frond" transform="scale(-1 1) rotate(-28)"/>
+          <use href="#frond" transform="scale(-1 1) rotate(8)"/>
+          <use href="#frond" transform="scale(-1 1) rotate(44)"/>
+          <use href="#frond" transform="rotate(-92) scale(0.8)"/>
+        </g>
+      </g>
+    </svg>
+    <p>Fan-made countdown. Not affiliated with or endorsed by Rockstar Games or Take-Two Interactive.</p>
+    <div class="legal">
+      <span>&copy; 2026 Willverse. All rights reserved.</span>
+      <a href="https://willverse.net" target="_blank" rel="noopener">Visit willverse.net</a>
+      <a href="#about">About</a>
+    </div>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
